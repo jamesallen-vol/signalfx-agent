@@ -547,9 +547,6 @@ workflows:
       - integration_tests:
           requires:
             - build
-      - perf_tests:
-          requires:
-            - build
       - k8s_integration_tests:
           name: k8s_v1.18.0_integration_tests
           k8s_version: v1.18.0
